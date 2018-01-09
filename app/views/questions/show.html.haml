@@ -1,0 +1,19 @@
+.blockquote
+  = @question.text
+  %br
+  %br
+  .category{style: 'font-size: 12px'}
+    = "category: #{@question.category}"
+  %br
+  %br
+  %div
+    %div
+      = button_to 'TRUE', answer_path, params: { answer: ('correct' if @question.correct_answer),
+      category: @question.category } , method: :post, class: 'true'
+    %div
+      = button_to 'FALSE', answer_path, params: { answer: ('correct' if !@question.correct_answer),
+      category: @question.category } , method: :post, class: 'false'
+
+/= @question.correct_answer
+.background
+  = image_tag 'shrimp.gif'

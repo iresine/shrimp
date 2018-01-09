@@ -1,0 +1,10 @@
+.blockquote
+  .answer{style: 'color: #47c834;font-family: Arial;font-weight: bold;'}
+    CORRECT ANSWER!
+  %br
+  = link_to "another question from category - #{params[:category]}",
+    show_category_path(category: params[:category]), method: :post
+  %br
+  = link_to "random question", show_path, method: :post
+.background
+  = image_tag 'shrimp_correct.gif'

@@ -1,0 +1,51 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.true {
+  color: #008000;
+  float: right;
+}
+
+.false {
+  color: #FF0000;
+ }
+
+.blockquote {
+  background: #fffff0;
+  border-left: 10px solid #625b4a;
+  width: 770px;
+  margin: 0 auto;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.blockquote:before {
+  color: #625b4a;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.blockquote p {
+  display: inline;
+}
+
+.background {
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
